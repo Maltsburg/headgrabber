@@ -1,0 +1,174 @@
+@font-face {
+  font-family: 'MinecraftFont';
+  src: url('/img/MC.otf') format('opentype');
+}
+
+
+.page {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .page {
+    margin-left: 20% !important; 
+    margin-right: 20% !important;
+  }
+}
+ html {
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  background-image: url('/img/image.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+ }
+
+
+.logopng img {
+  margin-top: 1%;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.ButtonText {
+  font-size: 25px;
+}
+
+.headbtn {
+  margin: 10px;
+}
+
+button {
+  width: 350px;
+  height: 40px;
+  background-image: url('/img/button.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-color: transparent;
+  border: none;
+}
+
+button:hover {
+  background-image:url('/img/button_highlighted.png');
+}
+
+input:focus,input:hover {
+  background-image: url('/img/text_field_highlighted.png');
+}
+
+select {
+  width: 80px;
+  height: 35px;
+  font-family: 'MinecraftFont'; 
+  color: aliceblue;
+  background-color: black;
+  vertical-align: baseline;
+}
+
+#result {
+  font-family: 'MinecraftFont';
+  color:aliceblue;
+  font-size: 24px;
+}
+
+#name {
+  margin: 10px;
+  padding: 5px;
+  font-family: 'MinecraftFont';
+  font-size: 48px;
+  color: aliceblue;
+}
+
+input {
+  padding-left: 5px;
+  color: aliceblue;
+  width: 258px;
+  height:35px;
+  background-image: url('/img/text_field.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.ButtonText, .download {
+  color: rgb(247, 247, 247);
+  font-family: 'MinecraftFont';
+  font-size: 20px;
+}
+
+input[type="text"] {
+  font-family: 'MinecraftFont';
+  font-size: 20px;
+}
+
+.download {
+  display: block;
+}
+
+#logobox {
+  margin-top: 5%;
+  position: relative;
+}
+
+.text {
+  position:absolute;
+  left: 95%;
+  top: 60%;
+  animation: breathe 0.3s infinite alternate-reverse;
+  white-space:nowrap;
+}
+
+#displayText {
+  font-family: 'MinecraftFont';
+  font-size: 36px;
+  color: rgb(246, 255, 0);
+}
+
+@keyframes breathe {
+  0% {
+    transform: translate(-50%, -50%) rotate(-8deg) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-8deg) scale(1.1);
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .text {
+    white-space:initial;
+    top: 40%;
+    left: 92%;
+    font-size: 12px !important;
+  }
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+  top: 94%;
+  color: white;
+}
+
+footer img {
+  width: 16px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#link {
+  color: rgb(26, 205, 205);
+}
+
+#link:hover {
+  color: rgb(12, 163, 233);
+}
